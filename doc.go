@@ -5,7 +5,7 @@
 // languages among the world.
 //
 // The package offers methods to quickly lookup a country, language or currency based on a code, a
-// fraction of the name or a combination of other cirterias.
+// fraction of the name or a combination of other criterias.
 //
 // The full lists of data are also available and can be easily generated to JSON via the
 // `encoding/json` package.
