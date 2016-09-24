@@ -8,13 +8,13 @@ import "strings"
 // Currency materializes a currency object, with its name and ISO identifiers
 type Currency struct {
 	// Alpha3 refers to a 3-letter alpha ISO 4217 Code
-	Alpha3 string
+	Alpha3 string `json:"alpha3"`
 	// Numeric refers to a 3-digit numeric ISO 4217 Code
-	Numeric string
+	Numeric string `json:"numeric"`
 	// Decimals refers to the number of decimal accepted in this currency
-	Decimals uint
+	Decimals uint `json:"decimals"`
 	// Name refers to the common english name
-	Name string
+	Name string `json:"name"`
 }
 
 // Currencies exports all currencies available in the package
