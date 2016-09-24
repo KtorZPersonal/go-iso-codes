@@ -17,7 +17,7 @@ type Currency struct {
 	Name string
 }
 
-// Currencies exports all currencies available in the module
+// Currencies exports all currencies available in the package
 var Currencies = reduceCurrencies(currencies)
 
 func reduceCurrencies(dict map[string]Currency) (xs []Currency) {
@@ -28,7 +28,7 @@ func reduceCurrencies(dict map[string]Currency) (xs []Currency) {
 	return xs
 }
 
-// Lookup retrieves a list of currencies satisfying the criteriua(s) given in arguments
+// Lookup retrieves a list of currencies satisfying the criteria(s) given in arguments
 func Lookup(query Currency) []Currency {
 	if query.Alpha3 != "" {
 		res, ok := currencies[query.Alpha3]
