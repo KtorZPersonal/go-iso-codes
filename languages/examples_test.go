@@ -23,7 +23,7 @@ sort:
 	return _xs
 }
 
-// ExampleLookupAlpha illustrates a lookup made based on the Alpha3 field
+// ExampleLookup illustrates a lookup made based on the Alpha3 field
 func ExampleLookup() {
 	results := Lookup(Language{Alpha3: "fra"})
 	fmt.Println(results)

@@ -15,7 +15,7 @@ type Language struct {
 	Name string
 }
 
-// Languages exports all languages available in the module
+// Languages exports all languages available in the package
 var Languages = reduceLanguages(languages)
 
 func reduceLanguages(dict map[string]Language) (xs []Language) {
@@ -26,7 +26,7 @@ func reduceLanguages(dict map[string]Language) (xs []Language) {
 	return xs
 }
 
-// Lookup retrieves a list of language satisfying the criteria(s) given in arguments
+// Lookup retrieves a list of languages satisfying the criteria(s) given in arguments
 func Lookup(query Language) []Language {
 	if query.Alpha3 != "" {
 		res, ok := languages[query.Alpha3]
