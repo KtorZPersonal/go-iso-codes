@@ -13,19 +13,19 @@ import (
 // Country materializes a country object, with its name and ISO identifiers
 type Country struct {
 	// Alpha2 refers to a 2-letter alpha ISO 3166-1 Code
-	Alpha2 string
+	Alpha2 string `json:"alpha2"`
 	// Alpha3 refers to a 3-letter alpha ISO 3166-1 Code
-	Alpha3 string
+	Alpha3 string `json:"alpha3"`
 	// Numeric refers to a 3-digit numeric ISO 3166-1 Code
-	Numeric string
+	Numeric string `json:"numeric"`
 	// Currencies refers to all currencies used in a country
-	Currencies []currencies.Currency
+	Currencies []currencies.Currency `json:"currencies"`
 	// DialingCodes refers to all dialing / calling phone codes / prefixes
-	DialingCodes []string
+	DialingCodes []string `json:"dialing_codes"`
 	// Languages refers to all languages spoken in a country
-	Languages []languages.Language
+	Languages []languages.Language `json:"languages"`
 	// Name refers to the common english name of a country
-	Name string
+	Name string `json:"name"`
 }
 
 // Countries exports all countries available in the package
