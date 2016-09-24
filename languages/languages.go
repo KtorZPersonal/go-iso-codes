@@ -8,11 +8,11 @@ import "strings"
 // Language materializes a language object, with its name and ISO identifiers
 type Language struct {
 	// Alpha2 refers to a 2-letter ISO 639-1 Code, may be blank for some languages
-	Alpha2 string
+	Alpha2 string `json:"alpha2"`
 	// Alpha2 refers to a 3-letter ISO 639-2 Code
-	Alpha3 string
+	Alpha3 string `json:"alpha3"`
 	// Name refers to the language human-readable english name
-	Name string
+	Name string `json:"name"`
 }
 
 // Languages exports all languages available in the package
