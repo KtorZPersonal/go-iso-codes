@@ -6,10 +6,6 @@ go:
   - 1.7
   - tip
 
-env:
-    global:
-        - PKGS=$(go list ./... | grep -vE 'vendor')
-
 script:
-    - $(PKGS) | xargs go test -v
-    - $(PKGS) | xargs go vet
+    - go list ./... | grep -vE 'vendor'| xargs go test -v
+    - go list ./... | grep -vE 'vendor'| xargs go vet
