@@ -20,9 +20,9 @@ nevertheless that the `countries` package uses the two others.
 import (
     "fmt"
 
-    "github.com/KtorZ/codes/countries"
-    "github.com/KtorZ/codes/currencies"
-    "github.com/KtorZ/codes/languages"
+    "github.com/KtorZ/go-iso-codes/countries"
+    "github.com/KtorZ/go-iso-codes/currencies"
+    "github.com/KtorZ/go-iso-codes/languages"
 )
 
 func main() {
