@@ -1,0 +1,15 @@
+language: go
+
+go:
+  - 1.5
+  - 1.6
+  - 1.7
+  - tip
+
+env:
+    global:
+        - PKGS=$(go list ./... | grep -vE 'vendor')
+
+script:
+    - $(PKGS) | xargs go test -v
+    - $(PKGS) | xargs go vet
