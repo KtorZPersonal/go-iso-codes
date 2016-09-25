@@ -6,8 +6,8 @@ package countries
 import (
 	"strings"
 
-	"github.com/KtorZ/codes/currencies"
-	"github.com/KtorZ/codes/languages"
+	"github.com/KtorZ/go-iso-codes/currencies"
+	"github.com/KtorZ/go-iso-codes/languages"
 )
 
 // Country materializes a country object, with its name and ISO identifiers

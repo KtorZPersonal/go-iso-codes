@@ -6,8 +6,8 @@ package countries
 import (
 	"fmt"
 
-	"github.com/KtorZ/codes/currencies"
-	"github.com/KtorZ/codes/languages"
+	"github.com/KtorZ/go-iso-codes/currencies"
+	"github.com/KtorZ/go-iso-codes/languages"
 )
 
 // sort ascendently sort a slice of countries on the Alpha3

@@ -4,8 +4,8 @@
 package countries
 
 import (
-	"github.com/KtorZ/codes/currencies"
-	"github.com/KtorZ/codes/languages"
+	"github.com/KtorZ/go-iso-codes/currencies"
+	"github.com/KtorZ/go-iso-codes/languages"
 )
 
 // reduceCountries constructs a list of Country from a given map of country
