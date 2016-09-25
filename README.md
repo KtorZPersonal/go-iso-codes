@@ -26,7 +26,7 @@ import (
 )
 
 func main() {
-    eurCurrency := currencies.Lookup(currencies.Currency{Alpha2: "EUR"})
+    eurCurrency := currencies.Lookup(currencies.Currency{Alpha3: "EUR"})
     fmt.Println(eurCurrency)
     // [{EUR 978 2 Euro}]
 
